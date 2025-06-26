@@ -21,7 +21,7 @@ async function fetchNews() {
     const resultDiv = document.getElementById('newsResult');
     resultDiv.innerHTML = "Fetching latest news...";
 
-    const apiKey = "7a5eeba0bc254a63b386b72e0219f0f6";
+    const apiKey = "enter-your-api-key";
 const url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&sortBy=publishedAt&language=en&apiKey=${apiKey}`;
     if (!query) {
         resultDiv.innerHTML = `
